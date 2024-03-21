@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Happy Flowers Day</title>
+    <link rel="stylesheet" href="css/flowerday.css" />
+  </head>
+  <body>
+    <div id="HappyFlowersday"><b>Happy Flowers Day! </b></div>
+     <h2>Heartfelt Message</h2>
+     <p id="message">
+      Mycha, on this special day, I may not have physical flowers to give, but this website is filled with virtual flowers, poems, and love just for you. You mean the world to me, and I hope this brings a smile to your face.
+    </p>
+    
+    <button class="answerButton" onclick="location.href='poetry.html'">
+      CLICK ME.
+    </button>
+   
+    <img src="blueroses.gif" alt="cat asking question" class="responsive" />
+
+    <script>
+      document
+        .getElementById("noButton")
+        .addEventListener("click", function () {
+          var yesButton = document.querySelector(
+            'button[onclick*="thankyou.html"]'
+          );
+          var currentFontSize = parseInt(
+            window.getComputedStyle(yesButton).fontSize
+          );
+          yesButton.style.fontSize = currentFontSize + 10 + "px"; // Increase font size by 5px
+        });
+    </script>
+  </body>
+</html>
